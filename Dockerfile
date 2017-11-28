@@ -19,6 +19,7 @@ RUN pip install  \
     google-apputils==0.4.2 \
     itsdangerous==0.24 \
     Jinja2==2.8 \
+    junit-xml>=1.3 \
     kazoo==2.2.1 \
     MarkupSafe==0.9 \
     mechanize==0.2.5 \
@@ -36,6 +37,7 @@ RUN pip install  \
     requests-toolbelt==0.7.0 \
     scapy==2.3.1 \
     six==1.10.0 \
+    subprocess32>=3.2.6 \
     Werkzeug==0.9 \
     wsgiref==0.1.2 \
     httpsig==1.1.2 \
