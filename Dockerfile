@@ -8,7 +8,9 @@ RUN apt-get update && apt-get install -y \
     protobuf-c-compiler \
     python \
     python-pip \
-    python-dev
+    python-dev \
+    tcpdump \
+    netcat
 
 RUN pip install  \
     aniso8601==1.1.0 \
