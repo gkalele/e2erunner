@@ -10,7 +10,10 @@ RUN apt-get update && apt-get install -y \
     python-pip \
     python-dev \
     tcpdump \
-    netcat
+    netcat \
+    python-ipaddr 
+
+RUN pip install --upgrade pip
 
 RUN pip install  \
     aniso8601==1.1.0 \
@@ -44,10 +47,6 @@ RUN pip install  \
     wsgiref==0.1.2 \
     httpsig==1.1.2 \
     xmlrunner==1.7.7 \
-    pyOpenSSL==16.2.0 \
-    ipaddr==2.2.0 \
-    subprocess32==3.5.2 \
-    junit_xml==1.8 \
     rpmfile==0.1.4
 
 ENV PYTHONPATH=/work/src/TetrationAnalytics/tetration:/work/src/TetrationAnalytics/tetration/test_framework/src/e2e/proto
